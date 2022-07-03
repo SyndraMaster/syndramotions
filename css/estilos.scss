@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+.librero {
+    display: flex;
+}
+.covertor {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    text-align: center;
+    padding: 10px;
+}
+.disco {
+    margin: 10px;
+    position: relative;
+    a {
+        position: absolute;
+    }
+    transition: all 1s ease;
+    &:hover {
+        a {
+            transition: all 1s ease;
+            transform: translateY(-50px);
+        }
+    }
+}
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+.medio {
+    background-color: aquamarine;
+    width: 30px;
+    height: 30px;
+}
+.circulo, .medio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circulo, .medio, .centro {
+    border-radius: 50%;
+}
+.centro {
+    background-color: aliceblue;
+    width: 10px;
+    height: 10px;
+}
