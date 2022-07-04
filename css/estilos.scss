@@ -3,37 +3,52 @@
 }
 .librero {
     display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 .covertor {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: aqua;
     text-align: center;
     padding: 10px;
+    position: relative;
+    z-index: 1;
 }
 .disco {
-    margin: 10px;
+    padding-top: 100px;
+    margin: 0px;
     position: relative;
-    a {
+    .vinilo {
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
     }
     transition: all 1s ease;
+    transform: rotateY(50deg);
     &:hover {
-        a {
+        transform: rotateY(0deg);
+        cursor: pointer;
+        .vinilo {
             transition: all 1s ease;
-            transform: translateY(-50px);
+            transform: translateY(-100px);
         }
     }
+
 }
 .circulo {
-    width: 100px;
-    height: 100px;
+    width: 196px;
+    height: 196px;
     background-color: black;
 }
 .medio {
     background-color: aquamarine;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
 }
 .circulo, .medio {
     display: flex;
@@ -45,6 +60,6 @@
 }
 .centro {
     background-color: aliceblue;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
 }

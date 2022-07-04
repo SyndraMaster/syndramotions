@@ -7,44 +7,73 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .covertor {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: aqua;
   text-align: center;
   padding: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .disco {
-  margin: 10px;
+  padding-top: 100px;
+  margin: 0px;
   position: relative;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  -webkit-transform: rotateY(50deg);
+          transform: rotateY(50deg);
 }
 
-.disco a {
+.disco .vinilo {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
 }
 
-.disco:hover a {
+.disco:hover {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  cursor: pointer;
+}
+
+.disco:hover .vinilo {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  -webkit-transform: translateY(-50px);
-          transform: translateY(-50px);
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
 }
 
 .circulo {
-  width: 100px;
-  height: 100px;
+  width: 196px;
+  height: 196px;
   background-color: black;
 }
 
 .medio {
   background-color: aquamarine;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .circulo, .medio {
@@ -65,7 +94,7 @@
 
 .centro {
   background-color: aliceblue;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
 }
 /*# sourceMappingURL=estilos.css.map */
