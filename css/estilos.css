@@ -17,22 +17,41 @@
           align-items: center;
 }
 
+.librero .container:nth-child(1) {
+  -webkit-transform: rotate(-20deg) translateY(30px);
+          transform: rotate(-20deg) translateY(30px);
+}
+
+.librero .container:nth-child(3) {
+  -webkit-transform: rotate(20deg) translateY(30px);
+          transform: rotate(20deg) translateY(30px);
+}
+
 .covertor {
   width: 200px;
   height: 200px;
   background-color: aqua;
+  background: -webkit-gradient(linear, right bottom, left top, from(#000), to(#c20016));
+  background: linear-gradient(to top left, #000, #c20016);
   text-align: center;
+  -webkit-box-shadow: 0 0 10px #c73131;
+          box-shadow: 0 0 10px #c73131;
   padding: 10px;
   position: relative;
   z-index: 1;
+}
+
+.covertor:hover {
+  -webkit-box-shadow: 0 0 20px #c73131;
+          box-shadow: 0 0 20px #c73131;
 }
 
 .disco {
   padding-top: 100px;
   margin: 0px;
   position: relative;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-transform: rotateY(50deg);
           transform: rotateY(50deg);
 }
@@ -58,8 +77,8 @@
 }
 
 .disco:hover .vinilo {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
 }
